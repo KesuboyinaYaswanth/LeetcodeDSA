@@ -56,9 +56,9 @@ class Solution {
     public int cherryPickup(int[][] grid){
         int m=grid.length;
         int n=grid[0].length;
-        int[][][] dp=new int[m+1][n+1][n+1];
-        for(int i=0;i<m+1;i++){
-            for(int j=0;j<n+1;j++){
+        int[][][] dp=new int[m][n][n];
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
                 Arrays.fill(dp[i][j],-1);
             }
         }
